@@ -33,9 +33,8 @@ function handleGalleryCardClick(event) {
 const hendleDocumentKeyDown = (event) => {
   if (event.code !== "Escape") {
     return;
-  } else {
-    instance.close(() => document.removeEventListener("keydown", hendleDocumentKeyDown));
   }
+  instance.close(() => document.removeEventListener("keydown", hendleDocumentKeyDown));
 };
 
 let instance;
